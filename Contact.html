@@ -1,0 +1,56 @@
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+		<title>Contact us!</title>
+		<link rel="stylesheet" href="Style.css">
+		<script>
+			
+	function buttonalert()
+	{
+		var input = document.getElementById("userInput").value;
+		if ((input==null)||(input=="")||(input=="Name"))
+    		{alert("Please fill the the form"+input);
+			document.getElementById('txtarea').value = 'I think of....';}
+		else
+			{alert(input+" Thank You for your feedback!");
+			document.getElementById('txtarea').value = 'I think of....';}
+		
+		
+
+	};
+		</script>
+	</head>
+	<body>
+		<body class="back">
+		<div class="header col-12">
+			<h1>El-Looz</h1>
+			<p> T-Shirts site</p>
+		</div>
+				<div class="Font col-12">
+			<a href="first page.html">Main page</a><a href="size.html"> Size chart </a><a href="#order"> Order </a>
+		</div>
+		<div class="col-12">
+		<form action="x.php" method="get" onsubmit="return false;"> 
+		<fieldset class="Contact">
+				<legend id="legend"> Contact us!</legend>
+			<label for="fname"> Name : </label>
+			<input  type="text" placeholder="Name" id="userInput" />
+			</br>
+			<label> Select gender :</label>
+			</br>
+			<label> Female </label> <input type="radio" name="Gender" value="female" >
+			<label> Male </label> <input type="radio" name="Gender" value="male" >
+			</br>
+			<textarea cols="20" rows="10" id="txtarea"> MY opinion is....</textarea>
+			</br>
+			</br>
+			<button  id="btn" onclick="buttonalert();">submit</button>
+		</fieldset>
+		</form>
+	</div>
+		<div class="bottom col-12">
+			<p>Order:<a href="mailto:Oryxsse@gmail.com" id="order"> e-mail </a> / call us: 00962 0*******</p>
+			<p> We are happy to serve you!</p>
+		</div>
+	</body>
+</html>
